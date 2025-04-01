@@ -77,7 +77,7 @@ country_iso_map = {
 win_counts["ISO_Code"] = win_counts["Country"].map(country_iso_map)
 
 app = Dash(__name__)
-app.title = "FIFA World Cup Dashboard"
+server = app.server
 
 app.layout = html.Div([
     html.H1("FIFA World Cup Winners Dashboard", style={"textAlign": "center"}),
